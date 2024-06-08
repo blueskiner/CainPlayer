@@ -5,13 +5,12 @@ def platformVersion = 21    // 18: openGLES 3 min api level
 // def platformVersion = 12    //openGLES 2 min api level
 
 android {
+    namespace 'com.cgfay.media'
     compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion "${platformVersion}"
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -22,7 +21,7 @@ android {
                         '-DANDROID_TOOLCHAIN=clang'
             }
             ndk {
-                abiFilters "armeabi-v7a"
+                abiFilters "armeabi-v7a", "arm64-v8a"
             }
         }
     }

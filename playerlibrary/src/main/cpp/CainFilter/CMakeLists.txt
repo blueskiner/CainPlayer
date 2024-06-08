@@ -8,7 +8,7 @@ elseif (${ANDROID_PLATFORM_LEVEL} LESS 18)
     set(GLES-lib GLESv2)
 else ()
     set(GLES-lib GLESv3)
-endif (${ANDROID_PLATFORM_LEVEL} LESS 11)
+endif (${ANDROID_PLATFORM_LEVEL} LESS 12)
 
 # 添加目录路径
 include_directories( ./ )

@@ -1,6 +1,8 @@
 # 设置cmake最低版本
 cmake_minimum_required(VERSION 3.4.1)
 
+project(CainPlayer)
+
 # 设置GCC编译器的编译选项
 if(CMAKE_COMPILER_IS_GNUCC)
   set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wmissing-declarations -Wmissing-prototypes")
